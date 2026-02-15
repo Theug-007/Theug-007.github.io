@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide de Vie Responsable</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Guide Responsable</div>
+    <nav>
+        <ul>
+            <li><a href="#fonctionnaires">Fonctionnaires</a></li>
+            <li><a href="#eleves">Élèves</a></li>
+            <li><a href="#apprentis">Apprentis</a></li>
+            <li><a href="#enfants">Enfants</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Réussir dans son milieu de vie</h1>
+        <p>Discipline • Respect • Responsabilité</p>
+    </div>
+</section>
+
+<!-- FONCTIONNAIRES -->
+<section id="fonctionnaires" class="section">
+    <div class="container">
+        <img src="images/fonctionnaire.jpg" alt="">
+        <div class="text">
+            <h2>Conseils pour les Fonctionnaires</h2>
+            <ul>
+                <li>Ponctualité et respect des horaires.</li>
+                <li>Servir avec honnêteté et transparence.</li>
+                <li>Respecter la hiérarchie.</li>
+                <li>Professionnalisme et discipline.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ELEVES -->
+<section id="eleves" class="section reverse">
+    <div class="container">
+        <img src="images/eleve.jpg" alt="">
+        <div class="text">
+            <h2>Conseils pour les Élèves</h2>
+            <ul>
+                <li>Respect des enseignants.</li>
+                <li>Organisation du temps d’étude.</li>
+                <li>Concentration en classe.</li>
+                <li>Éviter les mauvaises fréquentations.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- APPRENTIS -->
+<section id="apprentis" class="section">
+    <div class="container">
+        <img src="images/apprenti.jpg" alt="">
+        <div class="text">
+            <h2>Conseils pour les Apprentis</h2>
+            <ul>
+                <li>Respect du maître d’apprentissage.</li>
+                <li>Travail sérieux et régulier.</li>
+                <li>Patience et écoute.</li>
+                <li>Responsabilité professionnelle.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ENFANTS -->
+<section id="enfants" class="section reverse">
+    <div class="container">
+        <img src="images/enfant.jpg" alt="">
+        <div class="text">
+            <h2>Conseils pour les Enfants</h2>
+            <ul>
+                <li>Obéir aux parents.</li>
+                <li>Respecter les adultes.</li>
+                <li>Dire la vérité.</li>
+                <li>Bien travailler à l’école.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Richard Keteku</p>
+    <p>Email : tonemail@email.com</p>
+    <p>Téléphone : +228 XX XX XX XX</p>
+</section>
+
+<footer>
+    © 2026 Richard Keteku - Tous droits réservés
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('.section');
+    window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+            const position = section.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            if(position < screenPosition){
+                section.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
